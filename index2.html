@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change the color</title>
+    <style>
+
+        div{
+            display: block;
+            margin: 10px 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        button{
+            text-align: center;
+        }
+  
+        #changeMe{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            text-align: center;
+            margin-left: 500px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+    <button onclick="changeColor()">CLICK ME</button>
+    
+    <div id="changeMe"></div>
+    </div>
+<script>
+    var button =document.querySelector('button');  //declare veriale
+    var box =document.getElementById('changeMe');   //declare veriable
+
+    function changeColor(){   //function call
+    if(box.style.background == 'red'){
+        box.style.background = 'blue' ; 
+
+    }else{
+         
+        box.style.background = 'red'
+                //set the value
+    }
+    }
+</script>
+
+</body>
+</html>
